@@ -1,9 +1,6 @@
-# XamlQuery
-The write less, do more XAML library for WPF, Xamarin and Silverlight.
-
 # What is XamlQuery
 
-XamlQuery is a lightweight yet powerful library that enables rapid web development in Silverlight. It simplifies several tasks like page/document traversing; finding controls by name, type, style, property value or position in control tree; event handling; animating and much more. In short, what XamlQuery aims to do to Silverlight is similar to what jQuery does to JavaScript.
+XamlQuery is a lightweight yet powerful library that enables rapid development in Silverlight, WPF and Xamarin. It simplifies page/document traversing, finding controls by name/type/style/property-value/position, event handling, animating the controls and much more. In short, what XamlQuery aims to do to Silverlight is similar to what jQuery does to JavaScript.
 
 XamlQuery provides two approaches for finding controls.
 - Using Selector Queries, and
@@ -11,15 +8,15 @@ XamlQuery provides two approaches for finding controls.
 
 # Using Selector Queries
 
-XamlQuery/WPF selectors are feature rich and similar to CSS (cascading style sheet) selectors and jQuery selectors. A selector is a string that contains a set of matching rules or conditions that determine which controls to extract from the rendered WPF output. The following table summarizes the syntax of selectors.
+XamlQuery selectors are feature-rich and similar to CSS (cascading style sheet) selectors and jQuery selectors. A selector is a string that contains a set of matching rules or conditions that determine which controls to extract from the rendered WPF output.
 
 For more information about Selectors syntax and examples, see http://www.codeding.com/XamlQuery/?topic=15
 
-Once the syntax and usage are understood, the selectors are very easy and intuitive way to find controls. The search is performed in child / descendant controls of a given reference control. The reference control limits the search scope. It is very important to search in a lesser scope because of Silverlight’s behavior of creating additional controls in the rendered output.
+Once the CSS-like syntax is understood, the selectors are very easy and intuitive to find controls. The lookup is performed in child/descendant controls of a given reference control. The reference control limits the search scope. It would be optimal to search in a lesser scope for faster results.
 
 The following method is used to find controls using selectors.
 
-* Search() - method accepts a reference control and a selector query-string and returns the matching controls. The reference control is the one where the search starts.
+`Search()` method accepts a reference control and a selector query-string and returns the matching controls. The reference control is the one where the search starts.
 
 # Selector Examples
 
