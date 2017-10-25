@@ -1,6 +1,6 @@
 # What is XamlQuery
 
-XamlQuery is a lightweight yet powerful library that enables rapid development using XAML (WPF Xamarin or Silverlight). It simplifies finding controls by name, type, style, property value or position. It also helps in event handling, animating the controls and much more. In short, what XamlQuery aims to do to XAML is similar to what jQuery does to JavaScript.
+XamlQuery is a lightweight utility library for finding UI elements in rendered XAML (Extensible Application Markup Language) output. XAML is used extensively in building WPF, Xamarin or Silverlight applications. XamlQuery simplifies finding controls by name, type, style, property value or position. It also helps in event handling, animating the controls and much more. In short, what XamlQuery aims to do to XAML is similar to what jQuery does to JavaScript.
 
 XamlQuery provides two approaches for finding controls.
 - Using Selector Queries, and
