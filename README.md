@@ -1,6 +1,6 @@
 # What is XamlQuery
 
-XamlQuery is a lightweight yet powerful library that enables rapid development in Silverlight, WPF and Xamarin. It simplifies page/document traversing, finding controls by name/type/style/property-value/position, event handling, animating the controls and much more. In short, what XamlQuery aims to do to Silverlight is similar to what jQuery does to JavaScript.
+XamlQuery is a lightweight yet powerful library that enables rapid development using XAML (WPF Xamarin or Silverlight). It simplifies finding controls by name, type, style, property value or position. It also helps in event handling, animating the controls and much more. In short, what XamlQuery aims to do to XAML is similar to what jQuery does to JavaScript.
 
 XamlQuery provides two approaches for finding controls.
 - Using Selector Queries, and
@@ -8,7 +8,9 @@ XamlQuery provides two approaches for finding controls.
 
 # Using Selector Queries
 
-XamlQuery selectors are feature-rich and similar to CSS (cascading style sheet) selectors and jQuery selectors. A selector is a string that contains a set of matching rules or conditions that determine which controls to extract from the rendered WPF output.
+XamlQuery selectors are feature-rich and similar to CSS (cascading style sheet) selectors and jQuery selectors. A selector is a string that contains a set of matching rules or conditions that determine which controls to extract from the rendered output. The following table summarizes the syntax of selectors.
+
+![](XamlQuery Selectors.jpg)
 
 For more information about Selectors syntax and examples, see http://www.codeding.com/XamlQuery/?topic=15
 
@@ -80,7 +82,7 @@ The following are helper methods that are used to find children and parent contr
 
 `ParentByName()` - finds a parent control by name.
 
-`Root()` - method finds the root control in the rendered Silverlight page. If a UserControl or Page is embedded within another UserControl or Page, the later will be returned as root.
+`Root()` - method finds the root control of the screen or window or page. If a UserControl or Page is embedded within another UserControl or Page, the later will be returned as root.
 
 # XamlQuery API
 
@@ -229,7 +231,7 @@ XamlQuery.Search(LayoutRoot, "TextBox[FrameworkElement_Tag=Compulsory]");
 
 1) Why Search() method requires a reference control as argument?
 
-The reference control is used to limit the search scope. The search scope is very important, because of Silverlight’s behavior of creating additional controls in the rendered output. The lesser the search scope, the higher the accuracy of matching. For example, if the user needs to find controls inside a Grid, the reference control shall be that Grid instead of root control in the Page/UserControl.
+The reference control is used to limit the search scope. It would be optimal to search in a lesser scope for faster results. The lesser the search scope, the higher the accuracy of matching. For example, if the user needs to find controls inside a Grid, the reference control shall be that Grid instead of root control in the Page/UserControl.
 
 2) Can we use any number of white-spaces inside a query string?
 
