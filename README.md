@@ -23,43 +23,43 @@ The following method is used to find controls using selectors.
 
 # Selector Examples
 
-The following query finds all rectangles inside a canvas.
+Find all Rectangle elements inside a canvas.
 
       #MainCanvas Rectangle
 
-The following query finds all Shapes (Rectangle, Line, Ellipse, etc.) inside a canvas.
+Finds all Shape elements including its subclasses (Rectangle, Line, Ellipse, etc.) inside a canvas.
 
       #MainCanvas Shape
 
-The following example finds all textboxes that are grand child of a scroll viewer. The ‘*’ indicates that a ScrollViewer must be the ancestor of some control and that control must be an ancestor of a TextBox.
+Find all textboxes inside a ScrollViewer that are not direct children of that ScrollViewer. The ‘*’ indicates that a ScrollViewer must be the ancestor of 'some control' which in turn is ancestor of a TextBox.
 
       ScrollViewer * TextBox
 
-The following example gets all grids that are immediate children of all stack-panels in the search scope.
+Get all grids that are immediate children of all StackPanels.
 
       StackPanel > Grid
 
-The following example gets all children of a wrap-panel named ‘ScoresContainer’.
+Get all children of a WrapPanel named ‘ScoresContainer’.
 
       WrapPanel#ScoresContainer > *
 
-The following query finds all ellipses of style named ‘HighlightedNode’.
+Fnd all Ellipses with style HighlightedNode.
 
       #LayoutRoot Ellipse.HighlightedNode
 
-The following example finds the control named ‘EmailTextBox’ that is a descendant of ‘RegisterGrid’.
+Find the control named EmailTextBox that is a descendant of RegisterGrid.
 
       #RegisterGrid #EmailTextBox
 
-The following query will get all text-boxes whose Tag property is set.
+Get all TextBoxes whose Tag property is set.
 
       TextBox[Tag]
 
-The following query will get all text-blocks in second column of a grid.
+Get all TextBlocks in second column of a grid.
 
       #SalesReportGrid TextBlock[Grid_Column=1]
 
-The following example will find all controls whose name starts with ‘Rect’'
+Find all controls whose name starts with 'Rect'
 
       *[Name^Rect]
 
