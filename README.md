@@ -10,7 +10,7 @@ XamlQuery provides two approaches for finding controls.
 
 XamlQuery selectors are feature-rich and similar to CSS (cascading style sheet) selectors and jQuery selectors. A selector is a string that contains a set of matching rules or conditions that determine which controls to extract from the rendered output. The following table summarizes the syntax of selectors.
 
-![](XamlQuery Selectors.jpg)
+![](https://raw.githubusercontent.com/cincoutprabu/xamlquery/master/XamlQuery%20Selectors.jpg)
 
 For more information about Selectors syntax and examples, see http://www.codeding.com/XamlQuery/?topic=15
 
